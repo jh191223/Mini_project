@@ -1,0 +1,10 @@
+<h2>비식별화 완료!</h2>
+
+<!-- 원본 파일 다운로드 -->
+<p>원본 파일: <a href="{% url 'download_file' filename=uploaded_file_name %}">다운로드</a></p>
+
+<!-- 비식별화된 파일 다운로드 -->
+<p>비식별화된 파일: <a href="{% url 'download_file' filename=anonymized_file_name %}">다운로드</a></p>
+
+<h3>비식별화 데이터 미리보기</h3>
+<div>{{ preview|safe }}</div>
